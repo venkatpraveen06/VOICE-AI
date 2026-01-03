@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Neon Voice AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Neon AI</h2>
+    <div id="history"></div>
+  </aside>
+
+  <!-- Main Chat -->
+  <main class="chat">
+    <div id="messages"></div>
+
+    <!-- Sound Wave -->
+    <div class="wave" id="wave"></div>
+
+    <!-- Input Box -->
+    <div class="input-box">
+      <input id="textInput" placeholder="Message Neon AI..." onkeydown="handleEnter(event)" />
+      <button onclick="startVoice()">🎙️</button>
+      <button onclick="sendMessage()">➤</button>
+    </div>
+  </main>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
